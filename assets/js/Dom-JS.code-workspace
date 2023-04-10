@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "D:/Dom-JS"
+		},
+		{
+			"path": "D:/Git-Workspace/Demo_Project"
+		},
+		{
+			"path": "../../.."
+		},
+		{
+			"path": "D:/Javascript-Learning"
+		},
+		{
+			"path": "../../../../Project-JS"
+		},
+		{
+			"path": "../../../../Sidebar-menu"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Portfolio-code"
+	}
+}

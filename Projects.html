@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Menu</title>
+    <!-- STYLE.css -->
+    <link rel="stylesheet" href="./assets/css/projects.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- FONT-AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Boxions CDN -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- favicon -->
+    <link rel="stylesheet" href="./assets/img/favicon.png">
+    <!-- Remix icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">
+                <img src="./assets/img/PhongLoGo.png" alt="">
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <!-- <li class="nav__item">
+                        <a href="#home" class="nav__link">
+                            <i class="ri-home-3-line"></i>
+                        </a>
+                    </li> -->
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="ri-trophy-line"></i>Skills
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#qualification" class="nav__link">
+                            <i class="ri-book-open-line"></i>Qualification
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">
+                            <i class="ri-briefcase-line"></i>Services
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">
+                            <i class="ri-image-add-fill"></i>Projects
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="ri-message-2-line"></i></i>Contact
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- close button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__buttons">
+                <!-- theme chat -->
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                <!-- toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-4-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="sidebar">
+        <div class="siderbar close">
+            <div class="logo-details">
+                <!-- <img src="./logo.png" alt="Logo"> -->
+                <span class="logo_name">Projects</span>
+            </div>
+
+            <div class="sider-search">
+                <i class='bx bx-search-alt'></i>
+                <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search ..." title="Type in a category">
+            </div>
+
+            <ul class="sider-links" id="myMenu">
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-grid-alt'></i>
+                        <span class="link_name">Menu</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="#">Menu</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <div class="icon-link">
+                        <a href="#">
+                            <i class='bx bx-collection'></i>
+                            <span class="link_name">Category</span>
+                        </a>
+                        <i class='bx bxs-chevron-down arrow'></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="#">Template</a></li>
+                        <li><a href="#">Item web</a></li>
+                        <li><a href="#">Another</a></li>
+                        <li><a href="#">Card Style</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <div class="icon-link">
+                        <a href="#">
+                            <i class='bx bxs-book-content'></i>
+                            <span class="link_name">posts</span>
+                        </a>
+                        <i class='bx bxs-chevron-down arrow'></i>
+                    </div>
+                    <ul class="sub-menu">
+                            <li class="link_name item_name"><a href="#">Category</a></li>
+                            <li><a href="#">HTML & CSS</a></li>
+                            <li><a href="#">JavaScript</a></li>
+                            <li><a href="#">FrameWork</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <div class="icon-link">
+                        <a href="#">
+                            <i class='bx bx-plug'></i>
+                            <span class="link_name">Plugins</span>
+                        </a>
+                        <i class='bx bxs-chevron-down arrow'></i>
+                    </div>
+                        <ul class="sub-menu">
+                            <li><a class="link_name" href="#">Plugins</a></li>
+                            <li><a href="#">Google font</a></li>
+                            <li><a href="#">BoxIcons</a></li>
+                            <li><a href="#">UI & UX</a></li>
+                        </ul>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class='bx bx-rss'></i>
+                        <span class="link_name">Explore</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="#">Explore</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="icon-link">
+                        <a href="#">
+                            <i class='bx bx-cog'></i>
+                            <span class="link_name">Settings</span>
+                        </a>
+                        <i class='bx bxs-chevron-down arrow'></i>
+                    </div>
+                        <ul class="sub-menu">
+                            <li><a class="link_name" href="#">Settings</a></li>
+                            <li><a href="#">Complane</a></li>
+                            <li><a href="#">color form</a></li>
+                        </ul>
+                </li>
+                <!-- <li>
+                    <div class="profile-details">
+                        <div class="profile-content">
+                            <img src="./assets/img/logo.png" alt="profile" class="profile">
+                        </div>
+                            <div class="profile_item">
+                                <div class="profile_name">Nguyen Phong</div>
+                            </div>
+                    </div>
+                </li> -->
+            </ul>
+            <!--============== Profile =============-->
+
+        </div>
+        <section class="home-section">
+            <div class="home-content">
+                <i class='bx bx-menu' ></i>
+            </div>
+        </section>
+    </div>
+
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/project_main.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+</html>
